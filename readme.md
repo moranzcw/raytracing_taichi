@@ -18,4 +18,4 @@ $ python3 raytracing.py
 
 ## Demo
 
-![raytracing](raytracing.gif)
+![raytracing](results/video.gif)
