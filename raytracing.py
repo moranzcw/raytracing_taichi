@@ -261,14 +261,13 @@ def draw():
         screen[i, j] = col
 
 
-video_manger = ti.VideoManager(output_dir='./results', framerate=24, automatic_build=False)
+# video_manger = ti.VideoManager(output_dir='./results', framerate=24, automatic_build=False)
 
 gui = ti.GUI("screen", (nx, ny))
 for i in range(40):
     draw()
     gui.set_image(screen.to_numpy())
     gui.show()
-    # pixels_img = screen.to_numpy()
-    # video_manger.write_frame(pixels_img)
+    # video_manger.write_frame(screen.to_numpy())
 
-video_manger.make_video(gif=True, mp4=True)
+# video_manger.make_video(gif=True, mp4=True)
